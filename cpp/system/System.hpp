@@ -54,7 +54,7 @@ class System {
 		__NO_DISCARD__ const Heater& getHeater() const noexcept;
 
 		__NO_DISCARD__ bool setTemperature(const Temperature temperature) noexcept;
-		__NO_DISCARD__ void setStandBy() noexcept;
+		void setStandBy() noexcept;
 };
 
 } /* namespace system */

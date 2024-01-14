@@ -90,10 +90,11 @@ bool exportToCSV(const system::System& system, system::string_t filename) {
 	const system::Cooler& cooler = system.getCooler();
 	const system::Heater& heater = system.getHeater();
 
-	std::fprintf(f, "%f,%f,%f,%s,%i,%s,%i\n",
+	std::fprintf(f, "%f,%f,%f,%f,%s,%i,%s,%i\n",
 		system.getTemperature(),
 		pressure.first,
 		pressure.second,
+		system.getEvaporatorFanSpeed(),
 		parseEnum(cooler.getCompressorStatus()),
 		cooler.getFanSpeed(),
 		parseEnum(heater.getElectricResistanceStatus()),

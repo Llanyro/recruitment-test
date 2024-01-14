@@ -43,8 +43,8 @@ class Cooler {
 		__NO_DISCARD__ CompressorStatus getCompressorStatus() const noexcept;
 		__NO_DISCARD__ FanSpeed getFanSpeed() const noexcept;
 
-		__NO_DISCARD__ void setStandBy() noexcept;
-		__NO_DISCARD__ void start(const Temperature diff) noexcept;
+		void setStandBy() noexcept;
+		void start(const Temperature diff) noexcept;
 };
 
 } /* namespace system */

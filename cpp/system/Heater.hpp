@@ -43,8 +43,8 @@ class Heater {
 		__NO_DISCARD__ ElectricResistanceStatus getElectricResistanceStatus() const noexcept;
 		__NO_DISCARD__ PumpFlow getPumpFlow() const noexcept;
 
-		__NO_DISCARD__ void setStandBy() noexcept;
-		__NO_DISCARD__ void start(const Temperature diff) noexcept;
+		void setStandBy() noexcept;
+		void start(const Temperature diff) noexcept;
 };
 
 } /* namespace system */
